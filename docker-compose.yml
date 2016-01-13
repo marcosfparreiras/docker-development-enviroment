@@ -1,9 +1,17 @@
 web:
   image: marcosfparreiras/ubuntu-rvm-mysql-redis
   links:
-   -  redis
+   -  redis6379
+   -  redis6380
+   -  redis6381
   command: /bin/bash
 
-redis:
+redis6379:
+  image: redis:2.8.23
+
+redis6380:
+  image: redis:2.8.23
+
+redis6381:
   image: redis:2.8.23
 
