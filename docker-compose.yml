@@ -1,5 +1,5 @@
 web:
-  image: ditodev/ubuntu-mysql-redis
+  build: .
   links:
     - redis6379
     - redis6380
